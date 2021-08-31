@@ -7,6 +7,7 @@ const greenRed = document.querySelector("#gR");
 const blueRed = document.querySelector("#bR");
 const blueGreen = document.querySelector("#bG");
 const blueGreenRed = document.querySelector("#bgr");
+const nav = document.querySelector("nav");
 
 function random() {
     return Math.floor(Math.random() * 256);
@@ -42,8 +43,9 @@ function changeBackColor() {
     const rgb = circleColor();
     const backColor = `RGB(${rgb[0]},${rgb[1]},${rgb[2]})`
     document.body.style.backgroundColor = backColor;
+    nav.style.color = backColor;
     h1.innerText = `RGB (${rgb[0]},${rgb[1]},${rgb[2]})`
-    // h1.innerText = backColor;
+
 
 }
 
