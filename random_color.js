@@ -40,9 +40,10 @@ function circleColor() {
 
 function changeBackColor() {
     const rgb = circleColor();
-    const backColor = `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`
+    const backColor = `RGB(${rgb[0]},${rgb[1]},${rgb[2]})`
     document.body.style.backgroundColor = backColor;
-    h1.innerText = backColor;
+    h1.innerText = `RGB (${rgb[0]},${rgb[1]},${rgb[2]})`
+    // h1.innerText = backColor;
 
 }
 

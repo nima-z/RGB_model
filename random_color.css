@@ -8,26 +8,23 @@ body {
 .motherDiv {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width :500px;
     height:500px;
     margin-top: -5rem;
 }
 
 .circle {
-    border:2px solid black
-}
-#cirR {
     width:200px;
     height:200px;
+    border:2px solid black;
+}
+#cirR {
     background-color: red;
     border-radius: 100px;
     margin-top: 20vh;
 }
 
 #cirG {
-    width:200px;
-    height:200px;
     background-color: green;
     border-radius: 100px;
     position:relative;
@@ -37,8 +34,6 @@ body {
 }
 
 #cirB {
-    width:200px;
-    height:200px;
     background-color: rgb(7, 57, 255);
     border-radius: 100px;
     position:relative;
@@ -48,8 +43,6 @@ body {
 }
 
 #gR {
-    width:200px;
-    height:200px;
     background-color: rgb(255, 247, 4);
     border-radius: 100px;
     position:relative;
@@ -58,8 +51,6 @@ body {
 }
 
 #bR {
-    width:200px;
-    height:200px;
     background-color: purple;
     border-radius: 100px;
     position: absolute;
@@ -68,8 +59,6 @@ body {
 }
 
 #bG {
-    width:200px;
-    height:200px;
     background-color: lightblue;
     border-radius: 100px;
     position:absolute;
@@ -79,8 +68,6 @@ body {
 }
 
 #bgr {
-    width:200px;
-    height:200px;
     background-color: rgb(255, 255, 255);
     border-radius: 100px;
     position:absolute;
@@ -90,19 +77,31 @@ body {
 
 .btn {
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 13px 23px;
     background-color: rgb(36, 35, 42);
     color: rgb(224, 223, 216);
-    border:3px solid rgb(36, 35, 42)
+    border:0.5px solid rgb(36, 35, 42);
+    position: relative;
+    transition: all 0.2s;
+    font-family: 'Audiowide', cursive;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+    border-color: white;
+
 }
 
 nav {
     width:100%;
+    font-family: 'Audiowide', cursive;
 }
 h1 {
     margin-left: 2rem;
     margin-top: 2rem;
 }
+
+
 
 
 
