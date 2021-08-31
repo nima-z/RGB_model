@@ -1,60 +1,142 @@
 body {
     display:flex;
     flex-direction: column;
-    justify-content: space-center;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(218,69,13);
-    
-
 }
 
-#container {
-    display:flex;
-    width:100%;
-    justify-content: space-around;
-    
-
+.motherDiv {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width :500px;
+    height:500px;
+    margin-top: -5rem;
 }
 
-#cont2 {
-    display:flex;
-    flex-direction: column;
-    margin-top: 17rem;
-    align-items: center;
-
+.circle {
+    border:2px solid black
 }
-
-.div {
-    width:400px;
+#cirR {
+    width:200px;
     height:200px;
-    border:2px solid black;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 12rem;
-    color:white
+    background-color: red;
+    border-radius: 100px;
+    margin-top: 20vh;
 }
 
-#div1 {
-    background-color: rgb(218,0,0) ;
-}
-#div2 {
-    background-color: rgb(0,69,0) ;
-}
-#div3 {
-    background-color: rgb(0,0,13) ;
+#cirG {
+    width:200px;
+    height:200px;
+    background-color: green;
+    border-radius: 100px;
+    position:relative;
+    right:30%;
+    top:50%;
+    overflow: hidden;
 }
 
+#cirB {
+    width:200px;
+    height:200px;
+    background-color: rgb(7, 57, 255);
+    border-radius: 100px;
+    position:relative;
+    left:30%;
+    bottom:52%;
+    overflow: hidden;
+}
+
+#gR {
+    width:200px;
+    height:200px;
+    background-color: rgb(255, 247, 4);
+    border-radius: 100px;
+    position:relative;
+    bottom:52%;
+    left:28%;
+}
+
+#bR {
+    width:200px;
+    height:200px;
+    background-color: purple;
+    border-radius: 100px;
+    position: absolute;
+    bottom:50%;
+    right:30%;
+}
+
+#bG {
+    width:200px;
+    height:200px;
+    background-color: lightblue;
+    border-radius: 100px;
+    position:absolute;
+    top:-2px;
+    right:59%;
+    overflow: hidden;
+}
+
+#bgr {
+    width:200px;
+    height:200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    position:absolute;
+    bottom:50%;
+    left:28%;
+}
+
+.btn {
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: rgb(36, 35, 42);
+    color: rgb(224, 223, 216);
+    border:3px solid rgb(36, 35, 42)
+}
+
+nav {
+    width:100%;
+}
 h1 {
-    font-size:32px;
-    font-weight: 900;
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
-button {
-    width : 8rem;
-    height: 5rem;
-    border-radius: 5rem;
-    background-color: rgb(28, 27, 27);
-    color: white;
+
+
+
+
+
+
+
+
+
+
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: relative;
+    top: 40px;
 }
+.shape {
+    width: 250px;
+    height: 250px;
+    background: navy;
+    border-radius: 50%;
+    position: absolute;
+    left: 75px;
+    top: 50px;
+    overflow: hidden;
+}
+
+#top-left {
+    width: 150px;
+    height: 150px;
+    background: purple;
+    position: relative;
+    left: -25px; 
+}  */

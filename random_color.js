@@ -1,3 +1,13 @@
+const btn = document.querySelector(".btn");
+const h1 = document.querySelector("h1");
+const red = document.querySelector("#cirR");
+const green = document.querySelector("#cirG");
+const blue = document.querySelector("#cirB");
+const greenRed = document.querySelector("#gR");
+const blueRed = document.querySelector("#bR");
+const blueGreen = document.querySelector("#bG");
+const blueGreenRed = document.querySelector("#bgr");
+
 function random() {
     return Math.floor(Math.random() * 256);
 }
@@ -10,34 +20,32 @@ function randomColor() {
     return rgbList;
 }
 
-function divColor() {
+function circleColor() {
     const rgb = randomColor();
-    divRed.style.backgroundColor = `rgb(${rgb[0]},0,0)`;
-    divRed.innerText = `${rgb[0]}`;
+    red.style.backgroundColor = `rgb(${rgb[0]},0,0)`;
+    // red.innerText = `${rgb[0]}`;
 
-    divGreen.style.backgroundColor = `rgb(0,${rgb[1]},0)`;
-    divGreen.innerText = `${rgb[1]}`;
+    green.style.backgroundColor = `rgb(0,${rgb[1]},0)`;
+    // green.innerText = `${rgb[1]}`;
 
-    divBlue.style.backgroundColor = `rgb(0,0,${rgb[2]})`;
-    divBlue.innerText = `${rgb[2]}`;
+    blue.style.backgroundColor = `rgb(0,0,${rgb[2]})`;
+    // blue.innerText = `${rgb[2]}`;
 
+    greenRed.style.backgroundColor = `rgb(${rgb[0]},${rgb[1]},0)`;
+    blueRed.style.backgroundColor = `rgb(${rgb[0]},0,${rgb[2]})`;
+    blueGreen.style.backgroundColor = `rgb(0,${rgb[1]},${rgb[2]})`;
+    blueGreenRed.style.backgroundColor = `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`;
     return rgb;
 }
 
 function changeBackColor() {
-    const rgb = divColor();
+    const rgb = circleColor();
     const backColor = `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`
-    body.style.backgroundColor = backColor;
+    document.body.style.backgroundColor = backColor;
     h1.innerText = backColor;
 
 }
 
-const btn = document.querySelector("button");
-const body = document.querySelector("body");
-const h1 = document.querySelector("h1");
-const divRed = document.querySelector("#div1");
-const divGreen = document.querySelector("#div2");
-const divBlue = document.querySelector("#div3");
 
+//  command Code :
 btn.addEventListener('click', changeBackColor);
-
